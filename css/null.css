@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  background-color: #f7f6f5;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+input::placeholder {
+  color: black;
+  font-weight: 400;
+}
+
+label {
+  font-size: calc(16px + 2 * (100vw / 1300));
+  font-weight: 400;
+}
+
+button {
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #939290;
+  font-size: calc(14px + 0 * (100vw / 1300));
+  transition: all, .2s;
+  font-weight: 400;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  color: black;
+}
+
+ svg g,
+ svg g path,
+ svg path{
+    fill: #000000;
+}
+
+ul li {
+  list-style: none;
+  font-size: calc(14px + 2 * (100vw / 1300));
+  line-height: normal;
+}
+
+option, select {
+  font-size: calc(14px + 2 * (100vw / 1300));
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  font-weight: bold;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+body {
+  font-family: "Montserrat";
+  height: 100%;
+  background: #ffffff;
+  color: black;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+main {
+    margin-top: 70px;
+    flex: 1 1 auto;
+}
+
+.__container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.main_blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  padding-top: 0px;
+  margin-bottom: 75px;
+}
+
+.title_section {
+  margin-bottom: 70px;
+}
+
+.img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+p {
+  font-size: calc(14px + 2 * (100vw / 1300));
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.little {
+  font-size: calc(10px + 2 * (100vw / 1300));
+  font-weight: 300;
+}
+
+/* Заголовки */
+h1 {
+  font-size: calc(50px + 14 * (100vw / 1300));
+}
+
+h2 {
+  font-size: calc(29px + 17 * (100vw / 1300));
+}
+
+h3 {
+  font-size: calc(25px + 6 * (100vw / 1300));
+  font-weight: normal;
+}
+
+h4 {
+  font-size: calc(20px + 5 * (100vw / 1300));
+  font-weight: normal;
+}
+
+

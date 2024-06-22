@@ -1,0 +1,201 @@
+.search_block_modal {
+    width: 100%;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #e4002b;
+    border-radius: 20px;
+    padding: 5px 10px;
+    overflow: auto;
+}
+ .search-button_modal {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+    color: white;
+    background-color: transparent;
+}
+
+.search-button_modal::placeholder{
+    color: white;
+}
+
+.search-button::placeholder {
+    color: white;
+}
+
+.search-icon-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    fill: white;
+    width: 24px;
+    height: 24px;
+}
+
+
+.blocks_modal{ 
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+/* Карточка */
+.block_product {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    gap: 30px;
+}
+
+.block_product_modal {
+    gap: 30px;
+}
+
+.sostav_block {
+    display: grid;
+    gap: 30px;
+    align-items: center;
+    grid-template-columns: max-content minmax(50px, 130px) minmax(50px, 130px);
+    width: 100%;
+}
+
+.choice_block {
+    text-align: center;
+    position: relative;
+    border: 1px solid #d8d8d8;;
+    border-radius: 5px;
+    padding: 10px 20px;
+    gap: 5px;
+    transition: all, .2s;
+    cursor: pointer;
+}
+
+.choice_block:hover {
+    box-shadow: 0 0 10px #d8d8d8;
+}
+
+.choice_text {
+    font-size: calc(10px + 6 * (100vw / 1300));
+}
+
+.btn_red_modal {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.choice_block.selected {
+    border: 1px solid red;
+}
+
+.choice_block .checkmark {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.choice_block .checkmark svg {
+    width: 24px;
+    height: 24px;
+}
+
+.choice_block .checkmark svg path{
+    fill: rgba(255, 255, 255, 0);
+}
+
+.product_btn::after{
+    content: '209 ₽';
+    margin-left: 10px;
+    font-weight: 800;
+    font-size: calc(12px + 4 * (100vw / 1300));
+    letter-spacing: -1px;
+    top: 1px;
+    position: relative;
+}
+
+/* Корзина */
+
+.cart_section_modal {
+    gap: 30px;
+    height: 100%;
+}
+
+.cart_container_modal {
+    gap: 20px;
+    flex: 1 1 auto;
+}
+
+.cart_block_modal {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: minmax(50px, 130px) 2fr max-content max-content;
+    align-items: center;
+}
+
+.cart_block_modal__name {
+    gap: 10px;
+    justify-content: center;
+}
+
+.quantity-selector {
+    background-color: #9A9A9A;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 120px;
+    padding: 3px;
+    color: white;
+}
+
+.quantity-button {
+    background-color: white;
+    padding: 18px;
+    cursor: pointer;
+    width: 35px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 0;
+}
+
+.quantity {
+    flex-grow: 1;
+    text-align: center;
+    font-weight: 500;
+}
+
+.result_block_modal {
+    border-top: 1px solid #efefef;
+    padding-top: 30px;
+    gap: 20px;
+}
+
+
+@media (max-width:1040px) {
+    .cart_block_modal {
+        gap: 15px;
+    }
+
+    .quantity-selector {
+        width: 58px;
+    }
+
+    .quantity-button {
+        padding: 9px 0;
+        width: 18px;
+    }
+}
